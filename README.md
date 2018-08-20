@@ -67,7 +67,9 @@ www
 
 
 4. Integration test on localhost
+
 4.1 Server side
+
     in a python 3 venv terminal, python app.py
 
 4.2 Client side, from a browser
