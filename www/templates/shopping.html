@@ -1,0 +1,16 @@
+{% extends '__base__.html' %}
+
+{% block title %}{{ shopping.name }}
+{% endblock %}
+
+{% block content %}
+    <div class="uk-width-medium-3-4">
+        <article class="uk-article">
+            <h2>{{ shopping.name }}</h2>
+            <p class="uk-article-meta">Created {{ shopping.created_at|datetime }}</p>
+            <p>{{ shopping.html_content|safe }}</p>
+            <p class="uk-article-meta">Price {{ shopping.price }}</p>
+        </article>
+        <hr class="uk-article-divider">
+    </div>
+{% endblock %}

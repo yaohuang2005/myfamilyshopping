@@ -1,0 +1,25 @@
+{% extends '__base__.html' %}
+
+{% block title %}Shopping{% endblock %}
+
+{% block beforehead %}
+<script>
+</script>
+{% endblock %}
+
+{% block content %}
+    <div class="uk-width-medium-3-4">
+    {% for shopping in shoppings %}
+        <article class="uk-article">
+            <h2><a href="/shopping/{{ shopping.id }}">{{ shopping.name }}</a></h2>
+            <p class="uk-article-meta">Created {{ shopping.created_at|datetime }}</p>
+            <p>{{ shopping.summary }}</p>
+            <p><a href="/shopping/{{ shopping.id }}">Content <i class="uk-icon-angle-double-right"></i></a></p>
+            <p class="uk-article-meta">Price {{ shopping.price }}</p>
+
+        </article>
+        <hr class="uk-article-divider">
+    {% endfor %}
+    {{ pagination('/?page=', page) }}
+    </div>
+{% endblock %}
