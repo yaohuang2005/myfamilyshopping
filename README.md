@@ -92,8 +92,14 @@ www
     http://127.0.0.1:9001/manage/shoppings
     add / edit /delete
 
+
 5. TODO
 
 5.1 Add search feature in the web
 
-5.2 Add dockfile for easy test
+5.2 In myfamily database, add items table for a shopping, so this refines the 
+    shopping content. The items table schema should be: name, count, price, etc.
+    
+5.3 Add dockfile for easy test
+
+
