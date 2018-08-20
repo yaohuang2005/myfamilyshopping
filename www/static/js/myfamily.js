@@ -148,7 +148,6 @@ function toSmartDate(timestamp) {
         s = '1分钟前',
         t = now - timestamp;
     if (t > 604800000) {
-        // 1 week ago:
         var that = new Date(timestamp);
         var
             y = that.getFullYear(),
@@ -160,11 +159,9 @@ function toSmartDate(timestamp) {
         s = s + m + 'Month' + d + 'Day' + hh + ':' + (mm < 10 ? '0' : '') + mm;
     }
     else if (t >= 86400000) {
-        // 1-6 days ago:
         s = Math.floor(t / 86400000) + ' day ago';
     }
     else if (t >= 3600000) {
-        // 1-23 hours ago:
         s = Math.floor(t / 3600000) + ' hour ago';
     }
     else if (t >= 60000) {
@@ -181,7 +178,6 @@ $(function() {
     });
 });
 
-// JS Template:
 
 function Template(tpl) {
     var
@@ -212,7 +208,6 @@ function Template(tpl) {
     };
 }
 
-// extends jQuery.form:
 
 $(function () {
     console.log('Extends $form...');
@@ -296,7 +291,6 @@ $(function () {
     });
 });
 
-// ajax submit form:
 
 function _httpJSON(method, url, data, callback) {
     var opt = {

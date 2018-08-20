@@ -9,9 +9,7 @@ from aiohttp import web
 from apis import APIError
 
 def get(path):
-    '''
-    Define decorator @get('/path')
-    '''
+
     def decorator(func):
         @functools.wraps(func)
         def wrapper(*args, **kw):
