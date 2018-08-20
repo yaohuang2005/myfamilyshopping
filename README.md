@@ -47,30 +47,32 @@ The implementation is on MacOS, it will be same as on Centos, or Ubuntu ...
 
 3.3 Project code structure
 
-├── conf
-│   ├── nginx
-│   └── sql
-└── www
-    ├── apis.py
-    ├── app.py
-    ├── ...
-    ├── orm.py
-    ├── static
-    │   ├── css
-    │   ├── fonts
-    │   └── js
-    │       ├── myfamily.js
-    │       └── vue.min.js
-    └── templates
-        ├── __base__.html
-        ├── manage_shopping_edit.html
-        ├── ...
+|-- conf 
+|   -- nginx
+|   -- sql
+|-- www
+    |-- apis.py
+    |-- app.py
+    |-- orm.py
+    |-- ...
+    |-- static
+    |   |-- css
+    |   |-- fonts
+    |   |-- js
+    |       |-- myfamily.js
+    |       |-- vue.min.js
+    |-- templates
+        |-- __base__.html
+        |-- manage_shopping_edit.html
+        |-- ...
+
 
 4. Integration test on localhost
 4.1 Server side
     in a python 3 venv terminal, python app.py
 
 4.2 Client side, from a browser
+
     (1) sign in by credential as: yaohuangnt@yahoo.com / 123456
     http://127.0.0.1:9001/
     you can browse all the shoppings list
