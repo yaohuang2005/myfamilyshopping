@@ -47,24 +47,26 @@ The implementation is on MacOS, it will be same as on Centos, or Ubuntu ...
 
 3.3 Project code structure
 
-|-- conf 
-|   -- nginx
-|   -- sql
-|-- www
-    |-- apis.py
-    |-- app.py
-    |-- orm.py
-    |-- ...
-    |-- static
-    |   |-- css
-    |   |-- fonts
-    |   |-- js
-    |       |-- myfamily.js
-    |       |-- vue.min.js
-    |-- templates
-        |-- __base__.html
-        |-- manage_shopping_edit.html
-        |-- ...
+conf
+     nginx
+     sql
+www
+
+    apis.py
+    app.py
+    orm.py
+    ...
+
+    static
+          css
+          fonts
+          js
+              myfamily.js
+              vue.min.js
+    templates
+        __base__.html
+        manage_shopping_edit.html
+        ...
 
 
 4. Integration test on localhost
